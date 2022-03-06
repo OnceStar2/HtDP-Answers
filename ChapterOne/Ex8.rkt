@@ -9,7 +9,8 @@
    (>= (image-height cat) (image-width cat)) "tall" "wide"))
 
 (define tall-wide-square
-  (cond
-   [(> (image-height cat) (image-width cat)) "tall"]
-   [(= (image-height cat) (image-width cat)) "square"]
-   [(< (image-height cat) (image-width cat)) "wide"]))
+  (if
+   (> (image-height cat) (image-width cat)) "tall"
+   (if
+    (= (image-height cat) (image-width cat)) "square") 
+    (< (image-height cat) (image-width cat)) "wide"))
