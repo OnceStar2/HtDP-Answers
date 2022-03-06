@@ -1,5 +1,5 @@
 ; This exercise obviously has no strictly right or wrong answer, but nevertheless I drew a scenery with the sun, a tree, the sky and the ground 
-as an example illustration.
+; as an example illustration.
 
 (require 2htdp/image)
 ; Background 
